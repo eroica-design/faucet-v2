@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>K STADIUM Faucet</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/svg_ani.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="bg-img">      
+      <!-- 로고 숨김 -->
+      <!-- <header>
+        <img src="imgs/kstadium-logo.svg" alt="logo" class="logo">
+      </header> -->
+      <main>
+        <svg width="300" height="100" viewBox="0 0 300 100">
+          <text x="50%" y="50%" dy=".35em" text-anchor="middle" fill="#fff">
+            Faucet
+          </text>
+        </svg>
+        <section class="info-url">    
+          <h1>K STADIUM Faucet is a web service that provides free tokens to testnet users. Get <span class="kok">50 KOK</span> for free.</h1>
+          <img src="imgs/free50kok.png" alt="50kok">            
+          <div class="url">
+            <form class="url-form cf">                
+              <input type="text" name="url" placeholder="Enter the metamask address and click the button below.">     
+              <button type="submit" formaction="#" class="btn-blue cf">
+                <!-- 로딩 아이콘 -->               
+                <span class="loading"></span>
+                <!-- 로딩 아이콘 -->
+                Send KOK
+              </button>              
+            </form>
+            <!-- 얼럿 레드 -->
+            <div class="alret-red">            
+              <div class="alret-red-info fl">An error has occurred. Please try again.</div>
+              <div class="alret-function" onclick="this.parentElement.style.display='none';">&times;</div>
+            </div> 
+
+            <!-- 얼럿 그린 -->
+            <div class="alret-green">            
+              <div class="alret-green-info fl">KOK request has been completed. Please check the Wallet.</div>
+              <div class="alret-function" onclick="this.parentElement.style.display='none';">&times;</div>
+            </div>  
+
+            <!-- 얼럿 블루 -->
+            <div class="alret-blue">            
+              <div class="alret-blue-info fl">Only one request per hour is allowed. Please try again after 00m00s.</div>
+              <div class="alret-function" onclick="this.parentElement.style.display='none';">&times;</div>
+            </div> 
+
+            <!-- 얼럿 그레이 -->
+            <div class="alret-gray">            
+              <div class="alret-gray-info fl">You are on the gray/black list</div>
+              <div class="alret-function" onclick="this.parentElement.style.display='none';">&times;</div>
+            </div> 
+            
+            <!-- 안내문구 --> <!-- 토큰 url-->
+            <ul class="info-list">
+              <li>
+                <!-- <div class="token-wrap"> -->
+                  Token addition is required to check the transmitted KOK. Please enter the token contract address in the metamask and proceed with adding tokens.
+                  <div class="token-info">
+                    <h4>Token contract address</h4>
+                    <div class="token-tit">
+                    <div class="token-address">0x24d6517616D770DD9FaE8A7C23C4113988eF5895</div>
+                    <button class="tok-btn">Copy</button> 
+                    <!-- <button class="tok-btn"><img src="imgs/icon_copy.png">Copy</button>  -->
+                  </div>
+                <!-- </div> -->
+              </li>
+              <li>K STADIUM Faucet sends a small amount of KOK to Metamask address for testing.
+              </li>
+              <li>For fair distribution, Faucet can be executed once an hour.
+              </li>
+              <li>The provided KOK cannot be used for financial purposes.</li>
+            </ul>
+          </div>
+        </section>  
+      </main>        
+      <!-- <footer>
+        <p>Copyright 2022 <span class="bold">&copy;K STADIUM.</span> All rights reserved.</p>
+      </footer>   -->
+    </div>
+  </body>
+</html> 
+  
